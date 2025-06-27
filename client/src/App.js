@@ -1,11 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import ScrollToTop from "react-scroll-to-top";
-// components
-import MainHeader from "./components/MainHeader/MainHeader";
 
+// Components
+import MainHeader from "./components/MainHeader/MainHeader";
+import Footer from "./components/Footer/Footer";
+
+// Pages
 import Home from "./pages/Home/Home";
 import ContactUs from "./pages/contactUs/ContactUs";
-import Footer from "./components/Footer/Footer";
 import SingleProduct from "./pages/SingleProduct/SingleProduct";
 import Career from "./pages/Career/Career";
 import AboutUs from "./pages/AboutUs/AboutUs";
@@ -27,46 +30,60 @@ import MultiBalance from "./components/MultiBalance/MultiBalance ";
 function App() {
   return (
     <Router>
-      <ScrollToTop smooth />
-
-      <MainHeader />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/contact" exact element={<ContactUs />} />
-        <Route
-          path="/SingleBlogDetails"
-          exact
-          element={<SingleBlogDetails />}
+      {/* Default Helmet for site-wide fallback */}
+      <Helmet>
+        <title>Fenton Chemical - Advanced Silicone-Based Solutions</title>
+        <meta
+          name="description"
+          content="Fenton Chemical is a leading manufacturer of silicone-based chemicals, agro emulsifiers, and agricultural formulations."
         />
-        <Route path="/career" exact element={<Career />} />
-        <Route path="/about" exact element={<AboutUs />} />
-        <Route path="/Categories" exact element={<Categories />} />
+        <meta
+          name="keywords"
+          content="Fenton Chemical, agro emulsifiers, silicone chemicals, surfactants, orthosilicic acid, crop solutions"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.fentonchemical.com/" />
+        <meta
+          property="og:title"
+          content="Fenton Chemical - Advanced Silicone-Based Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Explore premium silicone chemicals, agro emulsifiers, and agricultural formulations by Fenton Chemical."
+        />
+        <meta
+          property="og:image"
+          content="https://www.fentonchemical.com/assets/featured-image.jpg"
+        />
+      </Helmet>
+
+      <ScrollToTop smooth />
+      <MainHeader />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/SingleBlogDetails" element={<SingleBlogDetails />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/Categories" element={<Categories />} />
         <Route path="/terms" element={<Terms_Conditions />} />
         <Route path="/privacy" element={<PrivacyPage />} />
-        <Route path="/products/:name/:value" exact element={<Products />} />
-        <Route path="/category/:name" exact element={<Agro />} />
-        <Route
-          path="/product-details/:ProductName/:ProductCode"
-          exact
-          element={<SingleProduct />}
-        />
-        <Route
-          path="/product-details/:ProductName"
-          exact
-          element={<SingleProduct />}
-        />
+        <Route path="/products/:name/:value" element={<Products />} />
+        <Route path="/category/:name" element={<Agro />} />
+        <Route path="/product-details/:ProductName/:ProductCode" element={<SingleProduct />} />
+        <Route path="/product-details/:ProductName" element={<SingleProduct />} />
         <Route path="/details" element={<AgroproductDetails />} />
         <Route path="/Resourcecenter" element={<Resourcecenter />} />
         <Route path="/Event-Gallery" element={<EventGallery />} />
         <Route path="/Singleblog" element={<SingleBlogDetails />} />
-
-        <Route path="/Orthosilicic_Acid" exact element={<Ortho />} />
+        <Route path="/Orthosilicic_Acid" element={<Ortho />} />
         <Route path="/Pheromones" element={<TechnicalDataSheet />} />
         <Route path="/Fensil360" element={<Fensil360 />} />
         <Route path="/MultiBalance4IN1" element={<MultiBalance />} />
-
         <Route path="/Blog/:title" element={<SingleBlogDetails />} />
       </Routes>
+
       <Footer />
     </Router>
   );
