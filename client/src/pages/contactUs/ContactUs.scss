@@ -1,0 +1,222 @@
+.contact-main {
+  overflow: hidden;
+  border-bottom: 1px solid white;
+
+  .inner-section {
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .bottom-outer {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+
+    .gradient {
+      z-index: 1;
+
+      height: 197px;
+      width: 197px;
+      border-radius: 50%;
+      background: #0086d9bb;
+      filter: blur(90px);
+      position: absolute;
+      top: -35px;
+      left: -72px;
+      z-index: 2;
+    }
+    .right-gradient {
+      z-index: 1;
+
+      height: 197px;
+      width: 197px;
+      border-radius: 50%;
+      background: #0086d9bb;
+
+      filter: blur(90px);
+      position: absolute;
+      top: -35px;
+      right: -72px;
+      z-index: 2;
+    }
+
+    .bottom-div {
+      padding: 0 5rem;
+      background-color: var(--bg-tertiary);
+      height: 16rem;
+      display: flex;
+      justify-content: space-between;
+
+      .left-con {
+       
+        display: flex;
+        align-items: center;
+
+        .inner {
+         
+
+          p {
+            color: var(--bg-primary);
+            margin: auto;
+            font-size: 1.3rem;
+            font-weight: 400;
+            z-index: 5;
+          }
+          h1 {
+            color: var(--bg-light);
+            font-weight: 700;
+            font-size: 3.2rem;
+            .tog {
+              background: var(--bg-tertiary);
+              background: linear-gradient(
+                88.23deg,
+                #097dc6 36.18%,
+                #51aae2 115.5%
+              );
+
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .right-con {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+          // margin-right: 6rem;
+          background-color: var(--bg-secondary);
+          color: var(--bg-light);
+          border: none;
+          padding: 10px 60px;
+          border-radius: 10px;
+          font-weight: 500;
+          font-size: 1.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .hrouter {
+      background-color: var(--bg-tertiary);
+
+      .hrline {
+        border: 1px solid #f6f6f673;
+        border-top: none;
+        width: 90%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// media queries
+@media (max-width: 900px) {
+  .contact-main {
+    .bottom-outer {
+      .bottom-div {
+        padding: 2rem;
+
+        .left-con {
+          .inner {
+            p {
+              font-size: 1.1rem;
+            }
+            h1 {
+              font-size: 2.2rem;
+            }
+          }
+
+          // border: 2px solid red;
+        }
+        .right-con {
+          button {
+            padding: 8px 30px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .contact-main {
+    .bottom-outer {
+      .bottom-div {
+        flex-direction: column-reverse;
+        .right-con {
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-main {
+    .bottom-outer {
+      .right-gradient,
+      .gradient {
+        display: none;
+      }
+      .bottom-div {
+        padding: 2rem;
+        height: 14rem;
+        .left-con {
+          .inner {
+            p {
+              font-size: 2.8vw;
+            }
+            h1 {
+              font-size: 6vw;
+            }
+          }
+        }
+        .right-con {
+          button {
+            padding: 8px 30px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-main {
+    .bottom-outer {
+      .right-gradient,
+      .gradient {
+        display: none;
+      }
+      .bottom-div {
+        padding: 2rem;
+        height: 12rem;
+        justify-content: center;
+        gap: 0px;
+        .left-con {
+          margin-top: 1rem;
+          .inner {
+            p {
+              font-size: 2.8vw;
+            }
+            h1 {
+              font-size: 6vw;
+            }
+          }
+        }
+        .right-con {
+          button {
+            padding: 8px 30px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+.our-clients-sub {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  .logo-carousel {
+    .scrollc {
+      overflow: visible;
+      .owl-them {
+        display: flex !important;
+        gap: 20px !important;
+        overflow: visible;
+        margin-top: 20px;
+
+        .service-cards {
+          height: 390px;
+          width: 350px;
+          background: var(--bg-primary);
+          border-radius: 15px;
+          padding: 13px;
+          border: 1px solid var(--border);
+          box-shadow: 5px 5px 10px var(--light-shadow);
+          // flex: 0 0 auto;
+          //   display: flex;
+          //   flex-direction: column;
+          //   justify-content: space-between;
+          //   scroll-snap-align: center; /* Snap each card to the center */
+          //   flex-shrink: 0;
+          overflow: hidden;
+         
+          z-index: 1;
+          cursor: pointer;
+
+          .image-containers {
+            height: 230px;
+
+            .image {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+              border-radius: 8px;
+            }
+          }
+
+          .details-containers {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // height: 100%;
+            position: relative;
+
+            .title {
+              margin-top: 10px;
+              line-height: 1.5rem;
+              width: 85%;
+              white-space: normal;
+              font-weight: 700;
+            }
+
+            .bottom-container {
+              display: flex;
+              flex-direction: row;
+              margin-top: 5px;
+              overflow: hidden;
+
+              .description {
+                color: var(--text-grey);
+                font-size: 0.8rem;
+                line-height: 1rem;
+                max-width: 80%;
+                word-wrap: break-word; /* Break long words if necessary */
+                white-space: normal; /* Allow wrapping onto multiple lines */
+                display: -webkit-box; /* For multi-line ellipsis */
+                -webkit-line-clamp: 3; /* Max number of lines */
+                -webkit-box-orient: vertical;
+              }
+            }
+
+            .arrow {
+              cursor: pointer;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    // .item {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   height: 100%;
+    //   width: 100%;
+    //   gap: 20px;
+    //   img {
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: contain;
+    //   }
+    // }
+    .scrollc {
+      .slick-slider {
+        .slick-list {
+          .slick-track {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-left: -13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .our-clients-sub {
+    // padding-top: 10%;
+
+    .logo-carousel {
+      margin-top: 40px;
+      .scrollc {
+        .owl-them {
+          .service-cards {
+            height: 300px;
+            width: 270px;
+            padding: 10px;
+            // border: 1px solid red;
+            scroll-snap-align: center; /* Snap each card to the center */
+            flex-shrink: 0;
+            margin-top: 15px;
+
+            .image-containers {
+              height: 160px;
+            }
+
+            .details-containers {
+              .title {
+                line-height: 1.3rem;
+                width: 100%;
+              }
+
+              .bottom-container {
+                margin-top: 8px;
+                .description {
+                  font-size: 0.8rem;
+                  max-width: 92%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .our-clients-sub {
+    .logo-carousel {
+      margin-top: 20px;
+
+      .scrollc {
+        padding: 0 !important;
+        .owl-them {
+          .service-cards {
+            height: 250px;
+            width: 200px;
+            padding: 8px;
+            scroll-snap-align: center; /* Snap each card to the center */
+            flex-shrink: 0;
+            position: relative;
+
+            .image-containers {
+              height: 120px;
+            }
+
+            .details-containers {
+              margin-top: 0;
+              justify-content: center;
+              height: auto;
+              align-content: center;
+              .title {
+                font-size: 14px;
+                line-height: 1rem;
+                width: 100%;
+              }
+
+              .bottom-container {
+                margin-top: 8px;
+                .description {
+                  font-size: 12px;
+                  max-width: 100%;
+                }
+              }
+              .arrow {
+                font-size: 5px !important;
+                position: absolute !important ;
+                bottom: -20px;
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.dialog-form-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.088);
+  backdrop-filter: blur(7px);
+  z-index: 999 !important;
+  padding-top: 5%;
+
+  .dialog-form {
+    width: 30%;
+    // height: 485px;
+    position: relative;
+    padding: 1rem 0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      128.7deg,
+      #e3e3e3 -119.68%,
+      #151515 22.65%,
+      #151515 102.79%
+    );
+
+    h5 {
+      margin: 0;
+    }
+
+    .bi {
+      position: absolute;
+      top: 3%;
+      right: 5%;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #ff4c4c;
+      }
+    }
+
+    h1 {
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 0.85rem;
+      width: 80% !important;
+    }
+
+    form {
+      width: 85%;
+      gap: 10px;
+
+      .col-12 {
+        // height: 12%;
+        .form-control {
+          height: 100%;
+        }
+        .form-control::placeholder {
+          color: #151515;
+        }
+      }
+      .right-container {
+        width: 99%;
+        .search-box {
+          .input-box {
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 6px 0;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        .empty-message {
+          text-align: center;
+          color: gray;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 10px;
+          background: #f8f9fa;
+          border-radius: 6px;
+        }
+
+        .selected-products {
+          background: white;
+          border-radius: 6px;
+          // margin-top: 2px;
+          padding: 0 5px;
+          .selected-product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            // height: 18px;
+
+            span {
+              display: inline-block;
+              font-size: 13px;
+              line-height: 12px;
+            }
+            button {
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .form-control::placeholder {
+      color: rgb(215, 211, 211);
+    }
+
+    .togg-d {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      #flexSwitchCheckDefault {
+        border: 1px solid black;
+      }
+    }
+
+    .letsTalk-btn {
+      background: linear-gradient(10.73deg, #45a0e5 0%, #264380 70%);
+      background: linear-gradient(95.22deg, #88e2e8 0%, #0b2069 100%);
+      font-size: 1.2rem;
+
+      &:hover {
+        box-shadow: 0px 0px 8px 4px #b2e5ff4d;
+      }
+    }
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1318px) {
+    .dialog-form {
+      width: 400px;
+      form {
+        gap: 6px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .dialog-form {
+      // width: 40%;
+      // height: 440px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dialog-form {
+      padding: 0.5rem;
+      border-radius: 1rem;
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .bi {
+        font-size: 1.2rem;
+      }
+
+      .letsTalk-btn {
+        font-size: 0.9rem;
+      }
+      form {
+      }
+    }
+  }
+
+  // @media (max-width: 560px) {
+  //   .dialog-form {
+  //     width: 350px;
+  //     height: 400px;
+  //   }
+  // }
+  @media (max-width: 480px) {
+    .dialog-form {
+      width: 90%;
+      padding: 0.5rem;
+      border-radius: 0.8rem;
+      @media (max-width: 370px) {
+        // height: 450px;
+      }
+      .kkk {
+        font-size: 1.9rem !important;
+        padding: 10px;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+      }
+
+      .bi {
+        font-size: 1rem;
+      }
+
+      .letsTalk-btn {
+        font-size: 0.8rem;
+      }
+      .togg-d {
+        width: 99% !important;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8rem;
+      }
+      label {
+        margin-top: 2px;
+      }
+    }
+  }
+}

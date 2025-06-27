@@ -1,0 +1,20 @@
+.SingleProduct {
+  .product-info {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    border: 1px soli red;
+
+    .left-img {
+      width: 50%;
+      height: 100%;
+    }
+    .right-details {
+      width: 50%;
+      height: 100%;
+    }
+  }
+}

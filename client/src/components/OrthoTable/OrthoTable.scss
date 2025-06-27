@@ -1,0 +1,85 @@
+.ortho-table-container {
+  padding: 20px;
+
+  // overflow: scroll;
+  width: 90%;
+  margin: auto;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  p {
+    color: #131313a6;
+  }
+  ul {
+    li {
+      list-style: decimal;
+      color: #131313a6;
+    }
+  }
+
+  .ortho-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      color: #131313a6;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      background: #097dc6;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .ortho-table-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      display: none;
+    }
+
+    .ortho-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: scroll;
+      margin-bottom: 2rem;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 3px;
+        text-align: left;
+        font-size: 12px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        background: #818181;
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+}

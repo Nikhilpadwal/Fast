@@ -1,0 +1,326 @@
+.careerMain {
+  .innerDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .leftDiv {
+      width: 55%;
+      padding: 4rem;
+
+      .headings {
+        .career {
+          font-weight: 400;
+          font-size: 25px;
+          color: var(--text-primary-light);
+        }
+        .details {
+          font-size: 2.6rem;
+          line-height: 53px;
+          font-weight: 400;
+          .span {
+            color: var(--text-primary);
+            font-weight: 600;
+          }
+          .join {
+            font-weight: 600;
+
+            color: var(--bg-secondary);
+          }
+        }
+      }
+      .jobs {
+        margin-top: 2.5rem;
+
+        .jobhead {
+          font-weight: 700;
+          font-size: 22px;
+          color: var(--bg-tertiary);
+        }
+        .jobs-card-Main {
+          margin-top: 1.5rem;
+          display: flex;
+          justify-content: start;
+          gap: 20px;
+          flex-wrap: wrap;
+          position: relative;
+
+          .job {
+            padding: 20px;
+            height: 282px;
+            width: 290px;
+            border: 1px solid #13131326;
+            border-radius: 6px;
+            .jobtitile {
+              font-weight: 500;
+              font-size: 1.2rem;
+              line-height: 1.3rem;
+            }
+            .vacancy {
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 20px;
+            }
+
+            .sallry {
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 15px;
+             
+            }
+            .discription {
+              // height: 100px;
+              font-weight: 400;
+              line-height: 18px;
+              overflow: hidden;
+              color: var(--text-primary);
+              font-size: 14px;
+              display: -webkit-box; /* Use a flexible box layout */
+              -webkit-box-orient: vertical; /* Set the orientation of the box to vertical */
+              -webkit-line-clamp: 3; /* Limit the text to 3 lines */
+              overflow: hidden; /* Hide the overflowing text */
+              text-overflow: ellipsis;
+            }
+            .button {
+              margin-top: 0.6rem;
+
+              button {
+                margin-top: 0.5rem;
+                background-color: var(--bg-secondary);
+                color: white;
+                font-size: 16px;
+                border: none;
+                padding: 5px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+            }
+          }
+          .JobForm {
+            height: 100vh;
+            width: 100vw;
+            z-index: 2222;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+          }
+        }
+      }
+      // padf
+      .pdf-section {
+        margin-top: 2rem;
+      }
+    }
+    // right
+    .rightDiv {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding-top: 9rem;
+      .form-con {
+        // margin-top: 10rem;
+        .data-collect-div {
+          height: 70%;
+          width: calc(100% - 30%);
+          width: 390px;
+          border-radius: 18px;
+          margin: auto;
+          background: black;
+          color: white;
+          padding: 3rem 40px;
+          position: relative;
+
+          .header {
+            width: 100%;
+
+            h1 {
+              text-align: center;
+              font-size: 30px;
+
+              font-weight: 700;
+              .touch {
+                color: var(--bg-secondary);
+              }
+            }
+            p {
+              font-size: 10px;
+              color: var(--bg-primary-light);
+              text-align: center;
+            }
+          }
+
+          .dropMail {
+            margin-top: 1.8rem;
+            .input-box {
+              margin-top: 10px;
+            }
+            input {
+              width: 100%;
+              border-radius: 7px;
+              border: none;
+              padding: 9px 1px;
+              font-weight: 400;
+              font-size: 14px;
+              padding-left: 11px;
+              color: gray;
+            }
+            input::placeholder {
+              color: gray;
+              font-size: 14px;
+              font-weight: 500;
+            }
+            input:focus {
+              border: none;
+              outline: none;
+            }
+            .textinput {
+              //   margin-top: 10px;
+              color: gray;
+            }
+
+            .dropdown {
+              select {
+                width: 100%;
+                padding: 9px 8px;
+                color: gray;
+                font-size: 14px;
+                border-radius: 7px;
+              }
+            }
+
+            textarea {
+              width: 100%;
+              height: 5rem;
+              border-radius: 7px;
+              padding: 9px;
+              font-family: Poppins;
+              &::placeholder {
+                color: gray;
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+
+            .button {
+              button {
+                background: var(--bg-tertiary);
+                background: linear-gradient(
+                  88.23deg,
+                  #097dc6 36.18%,
+                  #51aae2 115.5%
+                );
+                border: none;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 7px;
+                cursor: pointer;
+                width: 100%;
+              }
+            }
+          }
+          @media (max-width: 480px) {
+            width: 350px;
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .careerMain {
+    .innerDiv {
+      .leftDiv {
+        padding: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 990px) {
+  .careerMain {
+    .innerDiv {
+      flex-direction: column;
+      .leftDiv {
+        width: 100%;
+        padding: 4rem;
+      }
+      .rightDiv {
+        width: 100%;
+        object-fit: cover;
+        padding: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .careerMain {
+    .innerDiv {
+      .leftDiv {
+        .jobs {
+          .jobs-card-Main {
+            gap: 10px;
+            justify-content: space-around;
+            .job {
+              height: 100%;
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .careerMain {
+    .innerDiv {
+      .leftDiv {
+        padding: 1rem;
+        .headings {
+          width: 100%;
+          margin: auto;
+          .career {
+            font-size: 18px;
+          }
+          .details {
+            font-size: 1.8rem;
+            line-height: 40px;
+          }
+        }
+
+        .jobs {
+          padding: 10px;
+          height: 100%;
+          width: 100%;
+          .jobs-card-Main {
+            gap: 0;
+            justify-content: space-around;
+            .job {
+              padding: 15px;
+              width: 48%;
+              height: 100%;
+              @media (max-width: 480px) {
+                width: 80%;
+                padding: 20px;
+                margin-top: 10px;
+              }
+              .sallry {
+                justify-content: start;
+                align-items: start;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

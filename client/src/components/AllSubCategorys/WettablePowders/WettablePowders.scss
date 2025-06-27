@@ -1,0 +1,132 @@
+.wettable-powder-container {
+  width: 88%;
+
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../../../assets/images/Ellipse\ 21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+
+  .wp-head {
+    background: linear-gradient(90deg, #097dc6, #51aae2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .wp-para {
+    font-size: 16px;
+    color: #131313a6;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .wp-section {
+    margin-bottom: 10px;
+    padding: 1rem;
+    background: white;
+    border-radius: 30px;
+    width: 49%;
+    margin: 0px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+        font-size: 16px;
+        color: #131313a6;
+        list-style: decimal;
+        // line-height: 18px;
+      }
+    }
+
+    .formula {
+      background: #eef6ff;
+      padding-left: 20px;
+      border-radius: 5px;
+
+      li {
+        color: #0077b6;
+        font-weight: bold;
+      }
+    }
+  }
+  .wp-section:nth-child(3) {
+    width: 100%;
+  }
+}
+.formula {
+  width: 88%;
+  margin:1.5rem  auto;
+  border-radius: 30px;
+  padding: 1.5rem;
+  
+  .wp-head {
+    background: linear-gradient(90deg, #097dc6, #51aae2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  ul {
+    padding-left: 20px;
+
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wettable-powder-container {
+    padding: 1rem;
+    flex-direction: column;
+
+    .wp-head {
+      font-size: 1.2rem;
+      line-height: normal;
+    }
+
+    .wp-para {
+      font-size: 14px;
+    }
+
+    .wp-section {
+      padding: 1rem;
+      width: 100%;
+
+      ul {
+        padding-left: 20px;
+        margin-top: 10px;
+
+        li {
+          font-size: 14px;
+        }
+      }
+
+      .formula {
+        background: #eef6ff;
+        padding: 10px;
+        border-radius: 5px;
+
+        li {
+          color: #0077b6;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

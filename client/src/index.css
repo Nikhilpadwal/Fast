@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-primary: #f6f6f6;
+  --bg-primary-light: #f6f6f6cc; /*80% */
+  --bg-secondary: #0085d9;
+  --bg-tertiary: #131313;
+  --bg-light: #ffffff;
+  --text-primary: #131313;
+  --text-primary-light: #131313a6; /*65% opcity */
+  --text-secondary: #ffffff;
+  --text-grey: #131313a6;
+  --text-medium-grey: #595959;
+  --text-light-grey: #f6f6f6cc;
+  --text-light-white: #f6f6f6a6; /*65%*/
+  --text-theme: #51aae2;
+  --success: #28a745;
+  --warning: #ffc107;
+  --error: #dc3545;
+  --border: #ede8dc;
+  --linkedin: #0a66c2;
+  --facebook: #1877f2;
+  --twitter: #1da1f2;
+  --light-shadow: #939185;
+  --primary-linear-gradient: linear-gradient(to right, #097dc6, #51aae2);
+  --secondary-linear-gradient: linear-gradient(
+    to left,
+    #00b588,
+    #007171,
+    #002858,
+    #00132a
+  );
+  --tertiary-linear-gradient: linear-gradient(to right, #004773, #0085d9);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+html,
+body {
+  height: auto;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Poppins", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-secondary) transparent;
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1800px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.primary-gradient-background {
+  background: linear-gradient(to right, #097dc6, #51aae2);
+}
+
+.secondary-gradient-background {
+  background: linear-gradient(to right, #00b588, #007171, #002858, #00132a);
+}
+
+.tertiary-gradient-background {
+  background: linear-gradient(to right, #373737, #131313);
+}
+
+.padding-horizontal {
+  padding: 0 7rem;
+}
+
+.btn-primary {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  align-items: center;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.btn-secondary {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  align-items: center;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.btn-tertiary {
+  background-color: var(--bg-primary);
+  color: var(--text-grey);
+  border: 2px solid var(--text-grey);
+  align-items: center;
+  width: fit-content;
+  border-radius: 40px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 500;
+}

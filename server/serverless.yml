@@ -1,0 +1,28 @@
+service: fanton-chemical
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: prod
+  region: ap-south-1
+  memorySize: 512
+  timeout: 25
+
+functions:
+  api:
+    handler: ./app.handler
+    events:
+      - http:
+          path: /
+          method: any
+          cors: true
+      - http:
+          path: /{proxy+}
+          method: any
+          cors: true
+    environment:
+      MONGODB: mongodb+srv://kahna:kahnaji@cluster0.hhuomsd.mongodb.net/fantom
+      PORT: 9999
+      TOKEN_EXPIRATION_TIME: 7d
+      JWT_USER_TOKEN_SECRET: fantom
+      BASE_URL: https://t0ie5a6lei.execute-api.ap-south-1.amazonaws.com/prod/

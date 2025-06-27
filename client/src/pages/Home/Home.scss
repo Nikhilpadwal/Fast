@@ -1,0 +1,17 @@
+.home {
+  .service-container {
+    position: relative;
+  }
+
+  .tell-us-container {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px){
+  .home{
+    .tell-us-container{
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.secondary-btn {
+  cursor: pointer;
+  background: var(--bg-light);
+  text-align: center;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  border-radius: 10px;
+  width: 90%;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .secondary-btn {
+    width: 100%;
+    font-size: 14px;
+   padding: 10px 5px !important;
+  }
+}

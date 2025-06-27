@@ -1,0 +1,83 @@
+.global-presence {
+  background-image: url("../../../assets/images/home/world-map.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    .heading-container {
+      .heading {
+        margin-top: 1rem;
+        font-size: 3.3rem;
+        color: var(--text-secondary);
+        font-weight: 300;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .global-text,
+      .presence-text {
+        font-weight: 700;
+      }
+
+      .global-text {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .para-text {
+      color: var(--text-secondary);
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .global-presence {
+    height: 600px;
+
+    .header-container {
+      margin-top: 2rem;
+
+      .heading-container {
+        .heading {
+          font-size: 3rem;
+          line-height: 3.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .global-presence {
+    height: 500px;
+
+    .header-container {
+      margin-top: 1rem;
+      padding: 0 10px;
+
+      .heading-container {
+        .heading {
+          text-align: center;
+          font-size: 2.3rem;
+          line-height: 2.5rem;
+        }
+      }
+
+      .para-text {
+        width: 70%;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

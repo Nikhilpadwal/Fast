@@ -1,0 +1,161 @@
+.singblg {
+  scrollbar-width: none;
+  padding: 2rem;
+  .btn-button {
+    background: transparent;
+    border: none;
+
+    font-size: 18px;
+    color: red;
+    padding: 10px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .hd {
+    font-size: 2.2rem;
+    color: #000000bd;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .overlay-singleblog {
+    // border: 1px solid #ddd;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .parentImg {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 1.5rem;
+        background-image: url("../../assets/images/Ellipse\ 21.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 25px;
+        z-index: 1 !important;
+
+        .fristimg {
+          z-index: 3;
+          height: 22rem;
+          width: 22rem;
+          border-radius: 25px;
+          @media (max-width: 468px) {
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+      }
+      .b-head {
+        font-size: 24px;
+        margin-bottom: 10px;
+
+        width: fit-content;
+        background: radial-gradient(
+          157.47% 1012.75% at 6.55% 17.65%,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: #000000bd;
+        margin: auto;
+        text-align: center;
+
+        margin-bottom: 1rem;
+      }
+
+      .blog-para {
+        // font-family: "ubuntu";
+        font-size: 18px;
+        color: #000000bd;
+        text-align: justify;
+      }
+    }
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .singblg {
+    .hd {
+      font-size: 1.8rem;
+    }
+    .overlay-singleblog {
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .fristimg {
+          padding: 0;
+          margin-bottom: 2rem;
+        }
+        .blog-para {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .singblg {
+    padding: 1rem;
+    position: relative;
+    .btn-button {
+      top: 0;
+      left: 0;
+    }
+    .hd {
+      font-size: 1.5rem;
+    }
+    .overlay-singleblog {
+      .image-container {
+        .parentImg {
+          margin-bottom: 10px;
+
+          border-radius: 25px;
+          background: white;
+          padding: 0;
+
+          .fristimg {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+          }
+        }
+        .b-head {
+          font-size: 24px;
+          margin-bottom: 10px;
+
+          width: fit-content;
+          background: radial-gradient(
+            157.47% 1012.75% at 6.55% 17.65%,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: #000000bd;
+          margin: auto;
+          text-align: center;
+
+          margin-bottom: 1rem;
+        }
+
+        .blog-para {
+          // font-family: "ubuntu";
+          font-size: 18px;
+          color: #000000bd;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}

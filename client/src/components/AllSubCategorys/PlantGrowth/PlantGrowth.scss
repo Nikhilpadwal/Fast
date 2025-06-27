@@ -1,0 +1,139 @@
+.plant-growth-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  background-image: url("../../../assets/images/Ellipse\ 21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .plant-section {
+    width: 49%;
+    margin-bottom: 10px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    .plant-title {
+      background: linear-gradient(90deg, #097dc6, #51aae2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // border-bottom: 2px solid #097dc6;
+      padding-bottom: 10px;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+      color: #131313a6;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: decimal;
+
+      li {
+        font-size: 14px;
+        color: #131313a6;
+        line-height: normal;
+
+        margin: 5px 0;
+      }
+    }
+
+    .categories {
+      li {
+        line-height: normal;
+        border-radius: 5px;
+        font-size: 14px;
+        list-style-type: decimal;
+      }
+    }
+
+    .applications {
+      li {
+        line-height: normal;
+        border-radius: 5px;
+        font-size: 14px;
+        list-style-type: decimal;
+      }
+    }
+  }
+  .plant-section:nth-child(1) {
+    width: 100%;
+  }
+  .plant-section:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .plant-growth-container {
+    width: 95%;
+    flex-direction: column;
+    padding: 1rem;
+
+    .plant-section {
+      width: 100%;
+
+      .plant-title {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+      }
+
+      p {
+        font-size: 14px;
+        color: #131313a6;
+        line-height: 1.5;
+      }
+
+      ul {
+        padding-left: 20px;
+        list-style-type: decimal;
+
+        li {
+          font-size: 14px;
+          color: #131313a6;
+          line-height: normal;
+
+          margin: 5px 0;
+        }
+      }
+
+      .categories {
+        li {
+          line-height: normal;
+          border-radius: 5px;
+          font-size: 14px;
+          list-style-type: decimal;
+        }
+      }
+
+      .applications {
+        li {
+          line-height: normal;
+          border-radius: 5px;
+          font-size: 14px;
+          list-style-type: decimal;
+        }
+      }
+    }
+    .plant-section:nth-child(1) {
+      width: 100%;
+    }
+    .plant-section:nth-child(2) {
+      width: 100%;
+    }
+  }
+}

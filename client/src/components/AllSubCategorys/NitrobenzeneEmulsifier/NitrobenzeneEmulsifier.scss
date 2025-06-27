@@ -1,0 +1,84 @@
+.nitrobenzene-container {
+  width: 88%;
+  margin: 20px auto;
+  padding: 2rem 1.5rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("../../../assets/images/Ellipse\ 21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  @media (max-width: 600px) {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .nb-section {
+    width: 49%;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    @media (max-width: 617px) {
+      width: 100%;
+    }
+
+    .ne-head {
+      color: #007bff;
+      background: linear-gradient(90deg, #097dc6, #51aae2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: fit-content;
+      font-size: 1.8rem;
+      font-weight: 700;
+
+      @media (max-width: 600px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    p {
+      color: #131313a6;
+      font-size: 16px;
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+        list-style: decimal;
+        position: relative;
+        font-size: 16px;
+        color: #131313a6;
+        line-height: normal;
+        @media (max-width: 600px) {
+          font-size: 14px;
+        }
+
+        // &:before {
+        //   content: "✔";
+        //   position: absolute;
+        //   left: 0;
+        //   color: #28a745;
+        //   font-weight: bold;
+        // }
+      }
+    }
+  }
+  .nb-section:nth-child(3) {
+    width: 100%;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.nitrobenzene-container:nth-child(3) {
+  width: 100% !important;
+}

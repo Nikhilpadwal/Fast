@@ -1,0 +1,73 @@
+.main-container-oil {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  background-image: url("../../../assets/images/Ellipse\ 21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  .innper-part {
+    width: 49%;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 25px;
+    .head {
+      background: linear-gradient(90deg, #097dc6, #51aae2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      width: fit-content;
+      // border-bottom: 2px solid #097dc6;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      background: linear-gradient(90deg, #097dc6, #51aae2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: #131313a6;
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    .benefit,
+    .application {
+      padding-left: 0px;
+      margin-bottom: 20px;
+      background: #f9f9f9;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .benefit h3,
+    .application h3 {
+      margin: 0;
+    }
+
+    .benefit p,
+    .application p {
+      margin: 5px 0 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container-oil {
+    flex-direction: column;
+    .innper-part {
+      width: 100%;
+    }
+  }
+}

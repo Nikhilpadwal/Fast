@@ -1,0 +1,49 @@
+.related-products {
+  .heading-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .heading {
+      color: var(--text-grey);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .view-all-container {
+      width: fit-content;
+      display: flex;
+      justify-self: center;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+
+      p,
+      .arrow {
+        color: var(--bg-secondary);
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .all-related-products {
+    margin-top: 1.5rem;
+
+    .trending-cards {
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .related-products {
+    .heading-section {
+      .heading {
+        font-size: 1rem;
+      }
+    }
+  }
+}

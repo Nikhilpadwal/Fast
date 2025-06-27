@@ -1,0 +1,347 @@
+.ortho-container {
+  background-color: #f9f9f9;
+  .categories-inner {
+    width: 100%;
+    height: 200px;
+    background-image: url("../../assets/images/Categories/newimg/Orthosilicic_Acid.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    .bg-inner {
+      position: absolute;
+      background: #4b90fe75;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    h1 {
+      span {
+        color: white;
+      }
+
+      font-weight: 700;
+      font-size: 2.6rem;
+      line-height: 2.5rem;
+      color: black;
+      text-align: center;
+      z-index: 2;
+    }
+  }
+  .all-section-container {
+    padding: 2rem;
+    .topic {
+      margin-bottom: 2rem;
+      font-size: 2.6rem;
+      font-weight: 700;
+      background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; /* For WebKit browsers */
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+    }
+    .header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 2.6rem;
+      line-height: 2.5rem;
+      background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; /* For WebKit browsers */
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      width: fit-content;
+      margin: 1rem auto;
+    }
+
+    .section {
+      margin: 100px 0;
+
+      .intro-part {
+        display: flex;
+        .img-round {
+          border-radius: 0 150px 150px 0;
+          overflow: hidden;
+          background: #097dc6;
+          background-image: url("../../assets/images/Ellipse\ 21.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 40%;
+          padding: 6px 10px;
+          text-align: end;
+          margin-left: -2.5rem;
+
+          img {
+            width: 60%;
+            border: 2px solid white;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border-radius: 0 150px 150px 0;
+            border-radius: 50%;
+          }
+        }
+        .int-div {
+          width: 70%;
+          padding-left: 3rem;
+          display: flex;
+          flex-direction: column;
+
+          justify-content: center;
+          .int-head {
+            background: linear-gradient(
+              88.23deg,
+              #097dc6 36.18%,
+              #51aae2 115.5%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* For WebKit browsers */
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+            font-weight: 500;
+          }
+        }
+      }
+      .tractor {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 25px 25px;
+      }
+
+      .list {
+        list-style-type: decimal;
+        margin-left: 20px;
+      }
+      // table
+      .spec-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+
+        th,
+        td {
+          border: 1px solid #ccc;
+          padding: 8px;
+          text-align: left;
+        }
+
+        th {
+          background-color: #097dc6;
+        }
+      }
+    }
+    .details {
+      background-image: url("../../assets/images/Ellipse\ 21.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+      padding: 2rem;
+      border-radius: 25px;
+
+      .bg-white {
+        border-radius: 25px;
+        overflow: hidden;
+        border-radius: 25px 25px 0 0;
+        padding: 2rem;
+        .list {
+          li {
+            // background: linear-gradient(
+            //   88.23deg,
+            //   #097dc6 36.18%,
+            //   #51aae2 115.5%
+            // );
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent; /* For WebKit browsers */
+            // background-clip: text;
+            // color: transparent;
+            // text-align: center;
+            // width: fit-content;
+            color: #51aae2;
+            list-style-type: style decimal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ortho-container {
+    .categories-inner {
+      width: 100%;
+      height: 250px;
+      .onthhead {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+    }
+
+    .all-section-container {
+      padding: 1rem;
+      .topic {
+        font-size: 1.3rem;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        margin: 1rem auto;
+      }
+
+      .section {
+        margin: 80px 0;
+        margin-top: 0;
+
+        .intro-part {
+          flex-direction: column;
+          gap: 10px;
+
+          .img-round,
+          .int-div {
+            padding-left: 0;
+            width: 100%;
+          }
+        }
+        .intro-container {
+          display: flex;
+          gap: 30px;
+          line-height: normal;
+
+          img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+          }
+
+          .content {
+            font-size: 16px;
+            line-height: normal;
+          }
+        }
+        .tractor {
+          width: 100%;
+          height: 100%;
+        }
+
+        .list {
+          list-style-type: decimal;
+          margin-left: 20px;
+        }
+        // table
+        .spec-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 10px;
+
+          th,
+          td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+          }
+
+          th {
+            background-color: #f2f2f2;
+          }
+        }
+      }
+      .details {
+        padding: 10px;
+        .bg-white {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .ortho-container {
+    .categories-inner {
+      width: 100%;
+      height: 180px;
+
+      .onthhead {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+
+    .all-section-container {
+      padding: 2rem;
+
+      .title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin: 1rem auto;
+        text-align: start;
+      }
+
+      .section {
+        margin: 80px 0;
+
+        .intro-container {
+          display: flex;
+          gap: 30px;
+          flex-direction: column;
+
+          img {
+            width: 100%;
+            height: auto;
+            margin: auto;
+          }
+
+          .content {
+            font-size: 15px;
+            line-height: normal;
+          }
+        }
+        .tractor {
+          width: 100%;
+          height: 100%;
+        }
+
+        .list {
+          list-style-type: decimal;
+          padding: 0;
+          li {
+            font-size: 14px;
+          }
+        }
+        // table
+        .spec-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 10px;
+
+          th,
+          td {
+            padding: 8px;
+            font-size: 13px;
+            line-height: normal;
+          }
+
+          th {
+            background-color: #f2f2f2;
+          }
+        }
+      }
+    }
+  }
+}

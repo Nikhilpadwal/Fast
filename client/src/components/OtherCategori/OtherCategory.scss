@@ -1,0 +1,32 @@
+.other-category {
+  padding: 20px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+  width: 92%;
+  margin: auto;
+
+  h1 {
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #131313a6;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  /* Responsive design */
+  @media (max-width: 600px) {
+    padding: 15px;
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,391 @@
+.fensil-360 {
+  font-family: Arial, sans-serif;
+  padding: 1rem 3rem;
+  padding-top: 0;
+
+  &__header {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+    background-image: url("../../assets/images/Ellipse\ 21.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    width: 105vw;
+    margin: auto;
+    margin-left: -50px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 2.9rem;
+      // background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      // background-clip: text;
+      color: white;
+      text-align: center;
+      // width: fit-content;
+      // margin: auto;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+    }
+
+    p {
+      font-size: 16px;
+      color: white;
+    }
+  }
+
+  .bg-for {
+    // padding: 2rem 1.5rem;
+    padding: 0;
+    margin: 5rem 0;
+    // background-image: url("../../assets/images/Ellipse\ 21.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    border-radius: 25px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      // padding: 3rem 2rem;
+    }
+    &::before {
+      content: " ";
+      z-index: 1;
+      height: 90%;
+      width: 96%;
+      position: absolute;
+      background: white;
+      border-radius: 25px;
+      display: none;
+    }
+  }
+  .intro {
+    align-items: center;
+    justify-content: space-between;
+    .content {
+      width: 60%;
+      h5 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2rem;
+        background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+
+        width: fit-content;
+      }
+    }
+    .img-section {
+      // width: 30%;
+      background: url("../../assets/images/Ellipse\ 21.png");
+      border-radius: 25px;
+      padding: 10px;
+      display: flex;
+      justify-content: end;
+
+      img {
+        border-radius: 15px;
+        height: 390px;
+        width: 100%;
+      }
+    }
+  }
+  &__properties{
+    padding: 3rem !important;
+  }
+
+  &__about,
+  &__features,
+  &__key-features,
+  &__soil-wetter,
+  &__properties {
+    margin: 20px 0;
+    z-index: 2;
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      width: 90%;
+
+      li {
+        margin-bottom: 5px;
+        font-size: 15px;
+        list-style-type: decimal;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    background-color: #eaf7ff;
+    padding: 15px;
+
+    a {
+      color: #0056b3;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: "800px") {
+  .fensil-360 {
+    padding: 1.2rem;
+    padding-top: 0;
+
+    &__header {
+      padding: 15px;
+      margin-left: -35px;
+      height: 180px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .bg-for {
+      padding: 2rem 0;
+
+      // background: none;
+      &::before {
+        content: " ";
+        z-index: 1;
+        height: 99%;
+        width: 100%;
+      }
+    }
+    .intro {
+      flex-direction: column;
+      .content {
+        width: 100%;
+      }
+      .img-section {
+        border-radius: 25px;
+        padding: 1rem;
+        img {
+          border-radius: 25px;
+          height: 250px;
+        }
+      }
+    }
+
+    &__about,
+    &__features,
+    &__key-features,
+    &__soil-wetter,
+    &__properties {
+      margin: 20px 0;
+      z-index: 2;
+
+      h2 {
+        font-weight: 700;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      ul {
+        margin-left: 0px;
+        width: 100%;
+
+        li {
+          margin-bottom: 5px;
+          font-size: 15px;
+          list-style-type: decimal;
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      background-color: #eaf7ff;
+      padding: 15px;
+
+      a {
+        color: #0056b3;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+@media (max-width: "450px") {
+  .fensil-360 {
+    padding: 1.2rem;
+    padding-top: 0;
+
+    &__header {
+      padding: 15px;
+      margin-left: -35px;
+      height: 180px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+      
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+
+      p {
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+        margin:0 auto;
+      }
+    }
+
+    .bg-for {
+      padding: 2rem 0;
+      margin: 0;
+
+      // background: none;
+      &::before {
+        content: " ";
+        z-index: 1;
+        height: 99%;
+        width: 100%;
+      }
+    }
+  
+    .intro {
+      flex-direction: column;
+      .content {
+        width: 100%;
+        h5{
+          font-size: 1.3rem;
+          line-height: normal;
+        }
+      }
+      .img-section {
+        border-radius: 25px;
+        width: 100%;
+        padding: 5px;
+        img {
+          border-radius: 25px;
+          height: 250px;
+        }
+      }
+    }
+
+    &__about,
+    &__features,
+    &__key-features,
+    &__soil-wetter,
+    &__properties {
+      margin: 20px 0;
+      z-index: 2;
+
+      h2 {
+        font-weight: 700;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        
+        margin-top: 10px;
+      }
+      .kk{
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+        margin-left: 0px;
+        width: 100%;
+        // margin: 0;
+        // padding: 0;
+
+        li {
+          margin-bottom: 5px;
+          font-size: 14px;
+          list-style-type: decimal;
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        // line-height: normal;
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      background-color: #eaf7ff;
+      padding: 15px;
+
+      a {
+        color: #0056b3;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

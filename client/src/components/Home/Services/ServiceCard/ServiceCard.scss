@@ -1,0 +1,143 @@
+.service-card {
+  height: 390px;
+  width: 350px;
+  background: var(--bg-primary);
+  border-radius: 15px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  box-shadow: 5px 5px 10px var(--light-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: center; /* Snap each card to the center */
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+
+
+  .image-container {
+    height: 230px;
+
+    .image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+
+    .title {
+      line-height: 1.5rem;
+      width: 85%;
+      white-space: normal;
+      font-weight: 700;
+    }
+
+    .bottom-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      overflow: hidden;
+
+      .description {
+        color: var(--text-grey);
+        font-size: 0.8rem;
+        line-height: 1rem;
+        max-width: 80%;
+        word-wrap: break-word; /* Break long words if necessary */
+        white-space: normal; /* Allow wrapping onto multiple lines */
+        display: -webkit-box; /* For multi-line ellipsis */
+        -webkit-line-clamp: 3; /* Max number of lines */
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.service-card:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+// media queries
+@media (max-width: 768px) {
+  .service-card {
+    height: 300px;
+    width: 270px;
+    padding: 10px;
+    // border: 1px solid red;
+    scroll-snap-align: center; /* Snap each card to the center */
+    flex-shrink: 0;
+    margin-top: 15px;
+
+    .image-container {
+      height: 160px;
+    }
+
+    .details-container {
+      .title {
+        line-height: 1.3rem;
+        width: 100%;
+      }
+
+      .bottom-container {
+        margin-top: 8px;
+        .description {
+          font-size: 0.8rem;
+          max-width: 92%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    height: 270px;
+    width: 220px;
+    padding: 8px;
+    // border: 1px solid red;
+    scroll-snap-align: center; /* Snap each card to the center */
+    flex-shrink: 0;
+    margin-top: 10px;
+
+    .image-container {
+      height: 120px;
+    }
+
+    .details-container {
+      margin-top: 0;
+      .title {
+        font-size: 1rem;
+        line-height: 1rem;
+        width: 100%;
+      }
+
+      .bottom-container {
+        margin-top: 8px;
+        .description {
+          font-size: 0.8rem;
+          max-width: 92%;
+        }
+      }
+      .arrow{
+        height: 15px;
+      }
+    }
+  }
+}

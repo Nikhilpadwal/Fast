@@ -1,0 +1,128 @@
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+.table-container {
+  width: 100%;
+  width: 92%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+
+
+  .head {
+    .inner-head-1 {
+      .first-part-heading {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .table-title {
+    text-align: start;
+    font-size: 1.5rem;
+    padding: 10px;
+    // background-color: #51aae2;
+    color: rgb(0, 0, 0); // Red for title
+    //margin-bottom: 1rem;
+  }
+  .Emt-table {
+    overflow-x: scroll;
+
+    height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(131, 131, 141) transparent;
+
+    .emulsifier-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+      thead {
+        background-color: #818181;
+        color: #ffffff;
+
+        th {
+          padding: 1rem;
+          text-align: left;
+          font-size: 1rem;
+          font-weight: bold;
+          border-bottom: 2px solid #cccccc;
+        }
+      }
+
+      tbody {
+        tr {
+          &:nth-child(even) {
+            background-color: #f2f2f2; // Alternating row colors
+          }
+
+          td {
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #e0e0e0;
+          }
+        }
+
+        tr:hover {
+          background-color: #f0f0f0; // Hover effect
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .table-container {
+    padding: 0;
+    .table-title {
+      text-align: start;
+      font-size: 1rem;
+      padding: 5px;
+    }
+    .inner-head-2 {
+      display: none;
+    }
+
+    .Emt-table {
+      .emulsifier-table {
+        thead {
+          th {
+            padding: 3px;
+            padding: 0 3px 0 17px;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+
+        tbody {
+          tr {
+            &:nth-child(even) {
+              background-color: #f2f2f2; // Alternating row colors
+            }
+
+            td {
+              padding: 0 3px 0 17px;
+              text-align: left;
+              font-size: 12px;
+            }
+          }
+
+          tr:hover {
+            background-color: #f0f0f0; // Hover effect
+          }
+        }
+      }
+    }
+  }
+}

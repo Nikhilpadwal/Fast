@@ -1,0 +1,51 @@
+.our-clients {
+  height: 100%;
+  width: 100%;
+  display: none;
+
+  .our-clients-sub {
+    margin: auto;
+    // height: 250px;
+    width: 88%;
+
+    // .owl-them {
+    .item {
+      // border-radius: 25px;
+      overflow: hidden;
+      .video-container {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .videos {
+          margin: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+    // }
+    .slick-next:before {
+      color: #0087d9;
+    }
+    .slick-prev:before {
+      color: #0087d9;
+    }
+    .owl-theme::after[type="submit"]:not(:disabled),
+    button:not(:disabled) {
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    .video-container {
+      .videos {
+        height: auto !important;
+      }
+    }
+  }
+}

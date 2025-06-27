@@ -1,0 +1,70 @@
+.dashboard-main {
+  .dashboard-container-contact {
+    width: 100%;
+    margin: auto;
+    .responses {
+      width: 100%;
+      margin: auto;
+      .response-name,
+      .response-contact,
+      .response-purpose,
+      .response-company,
+      .response-quantity,
+      .response-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+      }
+      .line-main-head {
+        color: rgb(80, 73, 73);
+        width: 90%;
+        margin: auto;
+      }
+      .about-response {
+        width: 100%;
+        margin: auto;
+        // margin: 0 !important;
+        // padding: 0 !important;
+
+        .about-response-name-outer, .about-response-contact-outer, .about-response-purpose-outer, .about-response-contact-outer  {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+       
+
+        .about-response-name,
+        .about-response-contact,
+        .about-response-purpose,
+        .about-response-company,
+        .about-response-quantity,
+        .about-response-details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+
+          
+        }
+        .about-response-name,
+        .about-response-details {
+          .view-butt {
+            background-color: #f1f3fc;
+            width: 50%;
+            padding: 2%;
+
+            border: 1px black solid;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.496);
+          }
+        }
+      }
+      .line-main {
+        color: gray;
+        width: 85%;
+        margin: auto;
+      }
+    }
+  }
+}

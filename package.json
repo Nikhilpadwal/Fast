@@ -1,0 +1,20 @@
+{
+  "name": "fantom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cd server && node app.js",
+    "install-server": "cd server && npm install",
+    "start-server": "cd server && node app.js",
+    "install-client": "cd client && npm install --legacy-peer-deps",
+    "build-client": "cd client && npm run build",
+    "start-client": "cd client && npm run start",
+    "install-dashboard": "cd dashboard && npm install --legacy-peer-deps",
+    "build-dashboard": "cd dashboard && npm run build",
+    "start-dashboard": "cd dashboard && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Allow search engines to crawl the rest of the site
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.fentonchemical.com/sitemap.xml

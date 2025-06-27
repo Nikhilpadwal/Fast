@@ -1,0 +1,140 @@
+.faq-main {
+  display: flex;
+  margin-bottom: 3rem;
+  .faq-left {
+    width: 42%;
+    .left-inner {
+      margin: auto;
+      width: 60%;
+      .head {
+        color: gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .sec-head {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+        .Qua {
+          background: var(--bg-tertiary);
+          background: linear-gradient(88.23deg, #097dc6 36.18%, #51aae2 115.5%);
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .faq-right {
+    width: 55%;
+    .accordion {
+      .accordion-item {
+        margin-top: 10px;
+        border-radius: 7px;
+        overflow: hidden;
+        border: 1px solid rgba(128, 128, 128, 0.425);
+        background: transparent;
+        .accordion-header {
+          background: transparent;
+          border: none;
+
+          .accordion-button {
+            background: transparent;
+            font-weight: 500;
+            border: none;
+
+            size: 18px;
+          }
+        }
+
+        .accordion-collapse {
+          border: none;
+          background: transparent;
+          .accordion-body {
+            border: none;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// media quris
+@media (max-width: 850px) {
+  .faq-main {
+    .faq-left {
+      .left-inner {
+        margin: 1.5rem;
+        .head {
+          font-size: 1rem;
+        }
+        .sec-head {
+          font-size: 2.2rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 645px) {
+  .faq-main {
+    flex-direction: column;
+    .faq-left {
+      width: 100%;
+      .left-inner {
+        width: 90%;
+        margin: auto;
+      }
+    }
+    .faq-right {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .faq-main {
+    display: flex;
+    margin-bottom: 3rem;
+    .faq-left {
+      .left-inner {
+        .head {
+          font-size: 0.8rem;
+        }
+        .sec-head {
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+
+    .faq-right {
+      .accordion {
+        .accordion-item {
+          border-radius: 7px;
+          padding: -10px;
+          .accordion-header {
+            .accordion-button {
+              h5 {
+                font-size: 1rem;
+              }
+            }
+
+            .accordion-button {
+              size: 14px;
+            }
+          }
+          .accordion-collapse {
+            .accordion-body {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

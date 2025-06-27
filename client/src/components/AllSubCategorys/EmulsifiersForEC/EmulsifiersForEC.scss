@@ -1,0 +1,70 @@
+// Styles for the EmulsifiersForEC component
+.emulsifiers-for-ec {
+  font-family: Arial, sans-serif;
+  width: 88%;
+  margin: auto;
+  display: flex;
+  background-image: url("../../../assets/images/Ellipse\ 21.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 10px;
+  margin-bottom: 1rem;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .EC-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 25px;
+
+    .EC {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .EC-title {
+      color: #2980b9;
+      background: linear-gradient(90deg, #097dc6, #51aae2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: fit-content;
+      font-size: 1.8rem;
+      font-weight: 700;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        font-size: 1.2rem;
+      }
+    }
+
+    .ec-para,
+    ul {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #34495e;
+    }
+
+    ul {
+      list-style-type: decimal;
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+        margin-bottom: 10px;
+        color: #131313a6;
+       
+        line-height: normal;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          font-size: 14px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

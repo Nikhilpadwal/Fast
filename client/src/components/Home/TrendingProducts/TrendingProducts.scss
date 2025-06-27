@@ -1,0 +1,72 @@
+.trending-products {
+  background: var(--bg-tertiary);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 0 5rem 5rem;
+
+  .left-section {
+    width: 30%;
+
+    .heading {
+      color: var(--text-light-grey);
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .subheading {
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+      line-height: 3.8rem;
+      color: var(--text-secondary);
+
+      .span-text {
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  .right-section {
+    width: 70%;
+
+    .trending-cards-wrapper {
+      position: relative;
+
+      .trending-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        overflow-x: auto; /* Horizontal scroll */
+        scroll-snap-type: x mandatory; /* Enable smooth snapping */
+        padding: 20px 5rem;
+        white-space: nowrap; /* Keep items in one row */
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+      }
+
+      .scroll-blur {
+        position: absolute;
+        top: 0;
+        right: -8%;
+        width: 10rem;
+        height: 100%;
+        pointer-events: none; /* Height of the circular blur */
+        border-radius: 40%;
+        background: rgba(0, 0, 0, 0.7);
+        filter: blur(20px);
+        z-index: 1;
+      }
+
+      .trending-cards::-webkit-scrollbar {
+        display: none; /* Hide scrollbar on Webkit browsers */
+      }
+    }
+  }
+}
+
+
